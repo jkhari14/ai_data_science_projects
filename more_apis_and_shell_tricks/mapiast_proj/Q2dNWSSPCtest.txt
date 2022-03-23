@@ -1,0 +1,2 @@
+python3 /home/jkhari14/hw4/Q2c.py NWSSPC
+2022-02-25T05:36:32.000Z 11:34pm CST #SPC Day1 Outlook  https://t.co/GtEvHPMjG6 https://t.co/d9XDqDweG9

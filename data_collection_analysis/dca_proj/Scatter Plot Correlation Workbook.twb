@@ -1,0 +1,1352 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Discrete MSE by Sport' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;MSE by Split by Sport&quot;'>
+        <calculation class='tableau' formula='&quot;MSE by Split by Sport&quot;' />
+        <members>
+          <member value='&quot;MSE by Split by Sport&quot;' />
+          <member value='&quot;MSE Altogether&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='data2csv2_jjm' inline='true' name='federated.1m58m6i1atonxf131kw5h0kef481' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data2csv2_jjm' name='textscan.197df4h1k0u1581e9qi581kjpg0k'>
+            <connection class='textscan' directory='C:/Users/13369/Downloads/DE_200_FINAL_REPORT' filename='data2csv2_jjm.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.197df4h1k0u1581e9qi581kjpg0k' name='data2csv2_jjm.csv' table='[data2csv2_jjm#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Team' ordinal='0' />
+            <column datatype='integer' name='Finals Appearances' ordinal='1' />
+            <column datatype='integer' name='Finals Wins' ordinal='2' />
+            <column datatype='integer' name='Finals Losses' ordinal='3' />
+            <column datatype='real' name='GDP' ordinal='4' />
+            <column datatype='integer' name='Population' ordinal='5' />
+            <column datatype='boolean' name='Champion Status' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.197df4h1k0u1581e9qi581kjpg0k' name='data2csv2_jjm.csv' table='[data2csv2_jjm#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Team' ordinal='0' />
+            <column datatype='integer' name='Finals Appearances' ordinal='1' />
+            <column datatype='integer' name='Finals Wins' ordinal='2' />
+            <column datatype='integer' name='Finals Losses' ordinal='3' />
+            <column datatype='real' name='GDP' ordinal='4' />
+            <column datatype='integer' name='Population' ordinal='5' />
+            <column datatype='boolean' name='Champion Status' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finals Appearances</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finals Appearances]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Finals Appearances</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finals Wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finals Wins]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Finals Wins</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finals Losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finals Losses]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Finals Losses</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GDP]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>GDP</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Champion Status</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Champion Status]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Champion Status</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+      </column>
+      <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+      </column>
+      <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Choose' datatype='string' name='[Calculation_1116329770529976325]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+      </column>
+      <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Finals Losses]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Finals Wins]' role='measure' type='quantitative' />
+      <column datatype='real' name='[GDP]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='data2csv2_jjm.csv' datatype='table' name='[__tableau_internal_object_id__].[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Finals Wins]' derivation='Avg' name='[avg:Finals Wins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GDP]' derivation='Avg' name='[avg:GDP:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Population]' derivation='Avg' name='[avg:Population:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Finals Appearances]' derivation='Sum' name='[sum:Finals Appearances:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Finals Losses]' derivation='Sum' name='[sum:Finals Losses:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Finals Wins]' derivation='Sum' name='[sum:Finals Wins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GDP]' derivation='Sum' name='[sum:GDP:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[:Measure Names]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]&quot;</bucket>
+            </map>
+            <map to='asterisk'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:GDP:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[__tableau_internal_object_id__].[cnt:data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F:qk]&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:Population:qk]&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:Finals Losses:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:Finals Appearances:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Wins:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:Finals Wins:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1116329770518261762:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;College Football&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;NFL Football&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;NBA Basketball&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MLS Soccer&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;NHL Hockey&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MLB Baseball&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Discrete MSE by Sport' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;MSE by Split by Sport&quot;'>
+          <calculation class='tableau' formula='&quot;MSE by Split by Sport&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data2csv2_jjm.csv' id='data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F'>
+            <properties context=''>
+              <relation connection='textscan.197df4h1k0u1581e9qi581kjpg0k' name='data2csv2_jjm.csv' table='[data2csv2_jjm#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Team' ordinal='0' />
+                  <column datatype='integer' name='Finals Appearances' ordinal='1' />
+                  <column datatype='integer' name='Finals Wins' ordinal='2' />
+                  <column datatype='integer' name='Finals Losses' ordinal='3' />
+                  <column datatype='real' name='GDP' ordinal='4' />
+                  <column datatype='integer' name='Population' ordinal='5' />
+                  <column datatype='boolean' name='Champion Status' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1m58m6i1atonxf131kw5h0kef481'>
+      <datasources>
+        <datasource caption='data2csv2_jjm' name='federated.1m58m6i1atonxf131kw5h0kef481' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1m58m6i1atonxf131kw5h0kef481'>
+        <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+        </column>
+        <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+        </column>
+        <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+        </column>
+        <column datatype='boolean' name='[Champion Status]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Finals Wins]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+        <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Finals Wins]' derivation='Avg' name='[avg:Finals Wins:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1116329770520317955]' derivation='None' name='[none:Calculation_1116329770520317955:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1116329770525597700]' derivation='None' name='[none:Calculation_1116329770525597700:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Champion Status]' derivation='None' name='[none:Champion Status:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' included-values='in-range'>
+        <min>3.0</min>
+        <max>19.0</max>
+      </filter>
+      <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Wins:qk]' included-values='in-range'>
+        <min>2.0</min>
+        <max>14.0</max>
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]'>
+        <groupfilter function='level-members' level='[none:Calculation_1116329770518261762:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]'>
+        <groupfilter function='level-members' level='[none:Calculation_1116329770520317955:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]'>
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Baton Rouge&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Columbus&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Kansas City&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Los Angeles&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Miami&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;New York City&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;San Antonio&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;San Francisco&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;San Jose&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Tampa Bay&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Tuscaloosa&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Champion Status:nk]' member='false' />
+          <groupfilter function='member' level='[none:Champion Status:nk]' member='true' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]'>
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Team:nk]' member='%null%' />
+          <groupfilter from='&quot;Arlington/2010/MLB&quot;' function='range' level='[none:Team:nk]' to='&quot;Miami/2020/NBA&quot;' />
+          <groupfilter from='&quot;Nashville/2017/NHL&quot;' function='range' level='[none:Team:nk]' to='&quot;Washington DC/2019/MLB&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data2csv2_jjm' name='federated.1m58m6i1atonxf131kw5h0kef481' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m58m6i1atonxf131kw5h0kef481'>
+            <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+            </column>
+            <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='boolean' name='[Champion Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Finals Wins]' role='measure' type='quantitative' />
+            <column datatype='real' name='[GDP]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Finals Wins]' derivation='Avg' name='[avg:Finals Wins:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GDP]' derivation='Avg' name='[avg:GDP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Population]' derivation='Avg' name='[avg:Population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1116329770520317955]' derivation='None' name='[none:Calculation_1116329770520317955:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1116329770525597700]' derivation='None' name='[none:Calculation_1116329770525597700:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Champion Status]' derivation='None' name='[none:Champion Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' included-values='in-range'>
+            <min>8492527.0</min>
+            <max>797036410.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' included-values='in-range'>
+            <min>411678.0</min>
+            <max>28752318.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Wins:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' scope='rows' value='GDP in Thousands of Dollars' />
+            <format attr='title' class='0' field='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' scope='cols' value=' Finals Appearances' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' value='Team Won the Championship'>
+              <formatted-text>
+                <run>Team Won the Championship</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]' />
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' />
+              <color column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='584' />
+                <format attr='maxwidth' value='584' />
+                <format attr='minheight' value='371' />
+                <format attr='maxheight' value='371' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]</rows>
+        <cols>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]</cols>
+      </table>
+      <simple-id uuid='{00A9C568-4F79-4C24-AFC2-E2C04FC3D5ED}' />
+    </worksheet>
+    <worksheet name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data2csv2_jjm' name='federated.1m58m6i1atonxf131kw5h0kef481' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m58m6i1atonxf131kw5h0kef481'>
+            <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+            </column>
+            <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='boolean' name='[Champion Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Finals Wins]' role='measure' type='quantitative' />
+            <column datatype='real' name='[GDP]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Finals Wins]' derivation='Avg' name='[avg:Finals Wins:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GDP]' derivation='Avg' name='[avg:GDP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Population]' derivation='Avg' name='[avg:Population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1116329770520317955]' derivation='None' name='[none:Calculation_1116329770520317955:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1116329770525597700]' derivation='None' name='[none:Calculation_1116329770525597700:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Champion Status]' derivation='None' name='[none:Champion Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' included-values='in-range'>
+            <min>3190482.0</min>
+            <max>797036410.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' included-values='in-range'>
+            <min>865128.0</min>
+            <max>28752318.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Wins:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' scope='cols' value=' Finals Appearances' />
+            <format attr='title' class='0' field='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' scope='rows' value='Population' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' value='Team Won the Championship'>
+              <formatted-text>
+                <run>Team Won the Championship</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]' />
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' />
+              <color column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='584' />
+                <format attr='maxwidth' value='584' />
+                <format attr='minheight' value='371' />
+                <format attr='maxheight' value='371' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]</rows>
+        <cols>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]</cols>
+      </table>
+      <simple-id uuid='{FD92AD0E-837D-4140-B6F6-347C0D9BB82E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Scatter Plots'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='data2csv2_jjm' name='federated.1m58m6i1atonxf131kw5h0kef481' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1m58m6i1atonxf131kw5h0kef481'>
+        <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+        </column>
+        <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+        </column>
+        <column datatype='boolean' name='[Champion Status]' role='dimension' type='nominal' />
+        <column datatype='real' name='[GDP]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+        <column-instance column='[GDP]' derivation='Avg' name='[avg:GDP:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Population]' derivation='Avg' name='[avg:Population:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1116329770520317955]' derivation='None' name='[none:Calculation_1116329770520317955:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Champion Status]' derivation='None' name='[none:Champion Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='6500' id='8' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='9' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' type-v2='filter' w='16000' x='83200' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='10' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' type-v2='filter' w='16000' x='83200' y='14000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8125' id='11' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' type-v2='color' w='16000' x='83200' y='20500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8625' id='13' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16000' x='83200' y='28625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8125' id='14' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type-v2='color' w='16000' x='83200' y='37250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8625' id='15' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type-v2='filter' values='database' w='16000' x='83200' y='45375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='6500' id='8' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='9' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' type-v2='filter' w='16000' x='83200' y='7500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='10' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' type-v2='filter' w='16000' x='83200' y='14000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8625' id='15' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type-v2='filter' values='database' w='16000' x='83200' y='45375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='11' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' type-v2='color' w='16000' x='83200' y='20500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8625' id='13' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16000' x='83200' y='28625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='14' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type-v2='color' w='16000' x='83200' y='37250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B015D6FC-9F46-424C-8DD0-A978761B9E73}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[:Measure Names]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770529976325:nk]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{769138EE-7D6C-4ABF-BE24-11ED22FF1E39}' />
+    </window>
+    <window class='worksheet' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[:Measure Names]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]</field>
+            <field>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{199C00A8-2EB4-4ABA-BC3B-9CF63B612324}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Scatter Plots'>
+      <viewpoints>
+        <viewpoint name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E5966710-CC01-4977-A978-0B28E92EFC73}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Scatter Plots' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

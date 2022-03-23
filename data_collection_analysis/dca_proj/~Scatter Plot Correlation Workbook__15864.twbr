@@ -1,0 +1,882 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Discrete MSE by Sport' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;MSE by Split by Sport&quot;'>
+        <calculation class='tableau' formula='&quot;MSE by Split by Sport&quot;' />
+        <members>
+          <member value='&quot;MSE by Split by Sport&quot;' />
+          <member value='&quot;MSE Altogether&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='data2csv2_jjm' inline='true' name='federated.1m58m6i1atonxf131kw5h0kef481' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data2csv2_jjm' name='textscan.197df4h1k0u1581e9qi581kjpg0k'>
+            <connection class='textscan' directory='C:/Users/13369/Downloads/DE_200_FINAL_REPORT' filename='data2csv2_jjm.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.197df4h1k0u1581e9qi581kjpg0k' name='data2csv2_jjm.csv' table='[data2csv2_jjm#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Team' ordinal='0' />
+            <column datatype='integer' name='Finals Appearances' ordinal='1' />
+            <column datatype='integer' name='Finals Wins' ordinal='2' />
+            <column datatype='integer' name='Finals Losses' ordinal='3' />
+            <column datatype='real' name='GDP' ordinal='4' />
+            <column datatype='integer' name='Population' ordinal='5' />
+            <column datatype='boolean' name='Champion Status' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.197df4h1k0u1581e9qi581kjpg0k' name='data2csv2_jjm.csv' table='[data2csv2_jjm#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Team' ordinal='0' />
+            <column datatype='integer' name='Finals Appearances' ordinal='1' />
+            <column datatype='integer' name='Finals Wins' ordinal='2' />
+            <column datatype='integer' name='Finals Losses' ordinal='3' />
+            <column datatype='real' name='GDP' ordinal='4' />
+            <column datatype='integer' name='Population' ordinal='5' />
+            <column datatype='boolean' name='Champion Status' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finals Appearances</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finals Appearances]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Finals Appearances</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finals Wins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finals Wins]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Finals Wins</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Finals Losses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Finals Losses]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Finals Losses</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GDP]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>GDP</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Champion Status</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Champion Status]</local-name>
+            <parent-name>[data2csv2_jjm.csv]</parent-name>
+            <remote-alias>Champion Status</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+      </column>
+      <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+      </column>
+      <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Choose' datatype='string' name='[Calculation_1116329770529976325]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+      </column>
+      <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Finals Losses]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Finals Wins]' role='measure' type='quantitative' />
+      <column datatype='real' name='[GDP]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='data2csv2_jjm.csv' datatype='table' name='[__tableau_internal_object_id__].[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Finals Wins]' derivation='Avg' name='[avg:Finals Wins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GDP]' derivation='Avg' name='[avg:GDP:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Population]' derivation='Avg' name='[avg:Population:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Finals Appearances]' derivation='Sum' name='[sum:Finals Appearances:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Finals Losses]' derivation='Sum' name='[sum:Finals Losses:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Finals Wins]' derivation='Sum' name='[sum:Finals Wins:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GDP]' derivation='Sum' name='[sum:GDP:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Population]' derivation='Sum' name='[sum:Population:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[:Measure Names]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]&quot;</bucket>
+            </map>
+            <map to='asterisk'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:GDP:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[__tableau_internal_object_id__].[cnt:data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F:qk]&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:Population:qk]&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:Finals Losses:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:Finals Appearances:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Wins:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.1m58m6i1atonxf131kw5h0kef481].[sum:Finals Wins:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1116329770518261762:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;College Football&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;NFL Football&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;NBA Basketball&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MLS Soccer&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;NHL Hockey&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MLB Baseball&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Discrete MSE by Sport' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;MSE by Split by Sport&quot;'>
+          <calculation class='tableau' formula='&quot;MSE by Split by Sport&quot;' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data2csv2_jjm.csv' id='data2csv2_jjm.csv_C51813FC20C24086BE42FE7BA4EA6C3F'>
+            <properties context=''>
+              <relation connection='textscan.197df4h1k0u1581e9qi581kjpg0k' name='data2csv2_jjm.csv' table='[data2csv2_jjm#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Team' ordinal='0' />
+                  <column datatype='integer' name='Finals Appearances' ordinal='1' />
+                  <column datatype='integer' name='Finals Wins' ordinal='2' />
+                  <column datatype='integer' name='Finals Losses' ordinal='3' />
+                  <column datatype='real' name='GDP' ordinal='4' />
+                  <column datatype='integer' name='Population' ordinal='5' />
+                  <column datatype='boolean' name='Champion Status' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1m58m6i1atonxf131kw5h0kef481'>
+      <datasources>
+        <datasource caption='data2csv2_jjm' name='federated.1m58m6i1atonxf131kw5h0kef481' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1m58m6i1atonxf131kw5h0kef481'>
+        <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+        </column>
+        <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+        </column>
+        <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+        </column>
+        <column datatype='boolean' name='[Champion Status]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Finals Wins]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+        <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Finals Wins]' derivation='Avg' name='[avg:Finals Wins:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1116329770520317955]' derivation='None' name='[none:Calculation_1116329770520317955:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1116329770525597700]' derivation='None' name='[none:Calculation_1116329770525597700:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Champion Status]' derivation='None' name='[none:Champion Status:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' included-values='in-range'>
+        <min>3.0</min>
+        <max>19.0</max>
+      </filter>
+      <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Wins:qk]' included-values='in-range'>
+        <min>2.0</min>
+        <max>14.0</max>
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]'>
+        <groupfilter function='level-members' level='[none:Calculation_1116329770518261762:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]'>
+        <groupfilter function='level-members' level='[none:Calculation_1116329770520317955:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]'>
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Baton Rouge&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Columbus&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Kansas City&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Los Angeles&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Miami&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;New York City&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;San Antonio&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;San Francisco&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;San Jose&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Tampa Bay&quot;' />
+          <groupfilter function='member' level='[none:Calculation_1116329770525597700:nk]' member='&quot;Tuscaloosa&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Champion Status:nk]' member='false' />
+          <groupfilter function='member' level='[none:Champion Status:nk]' member='true' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]'>
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Team:nk]' member='%null%' />
+          <groupfilter from='&quot;Arlington/2010/MLB&quot;' function='range' level='[none:Team:nk]' to='&quot;Miami/2020/NBA&quot;' />
+          <groupfilter from='&quot;Nashville/2017/NHL&quot;' function='range' level='[none:Team:nk]' to='&quot;Washington DC/2019/MLB&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data2csv2_jjm' name='federated.1m58m6i1atonxf131kw5h0kef481' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m58m6i1atonxf131kw5h0kef481'>
+            <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+            </column>
+            <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='boolean' name='[Champion Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Finals Wins]' role='measure' type='quantitative' />
+            <column datatype='real' name='[GDP]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Finals Wins]' derivation='Avg' name='[avg:Finals Wins:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GDP]' derivation='Avg' name='[avg:GDP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Population]' derivation='Avg' name='[avg:Population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1116329770520317955]' derivation='None' name='[none:Calculation_1116329770520317955:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1116329770525597700]' derivation='None' name='[none:Calculation_1116329770525597700:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Champion Status]' derivation='None' name='[none:Champion Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' included-values='in-range'>
+            <min>8492527.0</min>
+            <max>797036410.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' included-values='in-range'>
+            <min>411678.0</min>
+            <max>28752318.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Wins:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' scope='rows' value=' Finals Appearances' />
+            <format attr='title' class='0' field='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' scope='cols' value='GDP in Thousands of Dollars' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' value='Team Won the Championship'>
+              <formatted-text>
+                <run>Team Won the Championship</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]' />
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' />
+              <color column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' />
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='584' />
+                <format attr='maxwidth' value='584' />
+                <format attr='minheight' value='371' />
+                <format attr='maxheight' value='371' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='584' />
+                <format attr='maxwidth' value='584' />
+                <format attr='minheight' value='371' />
+                <format attr='maxheight' value='371' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]</rows>
+        <cols>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]</cols>
+      </table>
+      <simple-id uuid='{00A9C568-4F79-4C24-AFC2-E2C04FC3D5ED}' />
+    </worksheet>
+    <worksheet name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data2csv2_jjm' name='federated.1m58m6i1atonxf131kw5h0kef481' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1m58m6i1atonxf131kw5h0kef481'>
+            <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+            </column>
+            <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+            </column>
+            <column datatype='boolean' name='[Champion Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Finals Wins]' role='measure' type='quantitative' />
+            <column datatype='real' name='[GDP]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Finals Wins]' derivation='Avg' name='[avg:Finals Wins:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GDP]' derivation='Avg' name='[avg:GDP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Population]' derivation='Avg' name='[avg:Population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1116329770520317955]' derivation='None' name='[none:Calculation_1116329770520317955:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1116329770525597700]' derivation='None' name='[none:Calculation_1116329770525597700:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Champion Status]' derivation='None' name='[none:Champion Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' included-values='in-range'>
+            <min>3190482.0</min>
+            <max>797036410.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' included-values='in-range'>
+            <min>865128.0</min>
+            <max>28752318.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]</column>
+            <column>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Wins:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' scope='rows' value=' Finals Appearances' />
+            <format attr='title' class='0' field='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' scope='cols' value='Population' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' value='Team Won the Championship'>
+              <formatted-text>
+                <run>Team Won the Championship</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]' />
+              <lod column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' />
+              <color column='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='584' />
+                <format attr='maxwidth' value='584' />
+                <format attr='minheight' value='371' />
+                <format attr='maxheight' value='371' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='584' />
+                <format attr='maxwidth' value='584' />
+                <format attr='minheight' value='371' />
+                <format attr='maxheight' value='371' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]</rows>
+        <cols>[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]</cols>
+      </table>
+      <simple-id uuid='{FD92AD0E-837D-4140-B6F6-347C0D9BB82E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Scatter Plots'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='data2csv2_jjm' name='federated.1m58m6i1atonxf131kw5h0kef481' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1m58m6i1atonxf131kw5h0kef481'>
+        <column caption='Sport' datatype='string' name='[Calculation_1116329770518261762]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(NBA)\W*&apos;) &#13;&#10;THEN &quot;NBA Basketball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(CF)\W*&apos;)&#13;&#10;THEN &quot;College Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLB)\W*&apos;)&#13;&#10;THEN &quot;MLB Baseball&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NFL)\W*&apos;)&#13;&#10;THEN &quot;NFL Football&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(NHL)\W*&apos;)&#13;&#10;THEN &quot;NHL Hockey&quot; &#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(MLS)\W*&apos;)&#13;&#10;THEN &quot;MLS Soccer&quot; &#13;&#10;END' />
+        </column>
+        <column caption='Year' datatype='string' name='[Calculation_1116329770520317955]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(2000)\W*&apos;)&#13;&#10;THEN &apos;2000&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2001)\W*&apos;)&#13;&#10;THEN &apos;2001&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2002)\W*&apos;)&#13;&#10;THEN &apos;2002&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2003)\W*&apos;)&#13;&#10;THEN &apos;2003&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2004)\W*&apos;)&#13;&#10;THEN &apos;2004&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2005)\W*&apos;)&#13;&#10;THEN &apos;2005&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2006)\W*&apos;)&#13;&#10;THEN &apos;2006&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2007)\W*&apos;)&#13;&#10;THEN &apos;2007&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2008)\W*&apos;)&#13;&#10;THEN &apos;2008&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2009)\W*&apos;)&#13;&#10;THEN &apos;2009&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2010)\W*&apos;)&#13;&#10;THEN &apos;2010&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2011)\W*&apos;)&#13;&#10;THEN &apos;2011&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2012)\W*&apos;)&#13;&#10;THEN &apos;2012&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2013)\W*&apos;)&#13;&#10;THEN &apos;2013&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2014)\W*&apos;)&#13;&#10;THEN &apos;2014&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2015)\W*&apos;)&#13;&#10;THEN &apos;2015&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2016)\W*&apos;)&#13;&#10;THEN &apos;2016&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2017)\W*&apos;)&#13;&#10;THEN &apos;2017&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2018)\W*&apos;)&#13;&#10;THEN &apos;2018&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2019)\W*&apos;)&#13;&#10;THEN &apos;2019&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(2020)\W*&apos;)&#13;&#10;THEN &apos;2020&apos;&#13;&#10;END' />
+        </column>
+        <column caption='City' datatype='string' name='[Calculation_1116329770525597700]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF REGEXP_MATCH([Team], &apos;\W*(Tuscaloosa)\W*&apos;)&#13;&#10;THEN &apos;Tuscaloosa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Phoenix)\W*&apos;)&#13;&#10;THEN &apos;Phoenix&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Los Angeles)\W*&apos;)&#13;&#10;THEN &apos;Los Angeles&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Francisco)\W*&apos;)&#13;&#10;THEN &apos;San Francisco&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Diego)\W*&apos;)&#13;&#10;THEN &apos;San Diego&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Jose)\W*&apos;)&#13;&#10;THEN &apos;San Jose&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oakland)\W*&apos;)&#13;&#10;THEN &apos;Oakland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Denver)\W*&apos;)&#13;&#10;THEN &apos;Denver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Miami)\W*&apos;)&#13;&#10;THEN &apos;Miami&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Orlando)\W*&apos;)&#13;&#10;THEN &apos;Orlando&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tallahassee)\W*&apos;)&#13;&#10;THEN &apos;Tallahassee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Atlanta)\W*&apos;)&#13;&#10;THEN &apos;Atlanta&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Athens)\W*&apos;)&#13;&#10;THEN &apos;Athens&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Chicago)\W*&apos;)&#13;&#10;THEN &apos;Chicago&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Indianapolis)\W*&apos;)&#13;&#10;THEN &apos;Indianapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Louisville)\W*&apos;)&#13;&#10;THEN &apos;Louisville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New Orleans)\W*&apos;)&#13;&#10;THEN &apos;New Orleans&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baton Rouge)\W*&apos;)&#13;&#10;THEN &apos;Baton Rouge&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Boston)\W*&apos;)&#13;&#10;THEN &apos;Boston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Baltimore)\W*&apos;)&#13;&#10;THEN &apos;Baltimore&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Detroit)\W*&apos;)&#13;&#10;THEN &apos;Detroit&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Minneapolis)\W*&apos;)&#13;&#10;THEN &apos;Minneapolis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(St Louis)\W*&apos;)&#13;&#10;THEN &apos;St Louis&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Kansas City)\W*&apos;)&#13;&#10;THEN &apos;Kansas City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Charlotte)\W*&apos;)&#13;&#10;THEN &apos;Charlotte&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Newark)\W*&apos;)&#13;&#10;THEN &apos;Newark&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Las Vegas)\W*&apos;)&#13;&#10;THEN &apos;Las Vegas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(New York City)\W*&apos;)&#13;&#10;THEN &apos;New York City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Buffalo)\W*&apos;)&#13;&#10;THEN &apos;Buffalo&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Syracuse)\W*&apos;)&#13;&#10;THEN &apos;Syracuse&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cleveland)\W*&apos;)&#13;&#10;THEN &apos;Cleveland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Cincinnati)\W*&apos;)&#13;&#10;THEN &apos;Cincinnati&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Columbus)\W*&apos;)&#13;&#10;THEN &apos;Columbus&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Akron)\W*&apos;)&#13;&#10;THEN &apos;Akron&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Oklahoma City)\W*&apos;)&#13;&#10;THEN &apos;Oklahoma City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Portland)\W*&apos;)&#13;&#10;THEN &apos;Portland&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Eugene)\W*&apos;)&#13;&#10;THEN &apos;Eugene&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Providence)\W*&apos;)&#13;&#10;THEN &apos;Providence&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Nashville)\W*&apos;)&#13;&#10;THEN &apos;Nashville&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Dallas)\W*&apos;)&#13;&#10;THEN &apos;Dallas&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Houston)\W*&apos;)&#13;&#10;THEN &apos;Houston&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(San Antonio)\W*&apos;)&#13;&#10;THEN &apos;San Antonio&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Arlington)\W*&apos;)&#13;&#10;THEN &apos;Arlington&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Salt Lake City)\W*&apos;)&#13;&#10;THEN &apos;Salt Lake City&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Seattle)\W*&apos;)&#13;&#10;THEN &apos;Seattle&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Green Bay)\W*&apos;)&#13;&#10;THEN &apos;Green Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Milwaukee)\W*&apos;)&#13;&#10;THEN &apos;Milwaukee&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Montreal)\W*&apos;)&#13;&#10;THEN &apos;Montreal&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Philadelphia)\W*&apos;)&#13;&#10;THEN &apos;Philadelphia&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Toronto)\W*&apos;)&#13;&#10;THEN &apos;Toronto&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Pittsburgh)\W*&apos;)&#13;&#10;THEN &apos;Pittsburgh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Washington DC)\W*&apos;)&#13;&#10;THEN &apos;Washington DC&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tampa Bay)\W*&apos;)&#13;&#10;THEN &apos;Tampa Bay&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Edmonton)\W*&apos;)&#13;&#10;THEN &apos;Edmonton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Ottawa)\W*&apos;)&#13;&#10;THEN &apos;Ottawa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Winnipeg)\W*&apos;)&#13;&#10;THEN &apos;Winnipeg&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Canton)\W*&apos;)&#13;&#10;THEN &apos;Canton&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Rochester)\W*&apos;)&#13;&#10;THEN &apos;Rochester&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Vancouver)\W*&apos;)&#13;&#10;THEN &apos;Vancouver&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Raleigh)\W*&apos;)&#13;&#10;THEN &apos;Raleigh&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Tulsa)\W*&apos;)&#13;&#10;THEN &apos;Tulsa&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Victoria)\W*&apos;)&#13;&#10;THEN &apos;Victoria&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Calgary)\W*&apos;)&#13;&#10;THEN &apos;Calgary&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Auburn)\W*&apos;)&#13;&#10;THEN &apos;Auburn&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(Clemson)\W*&apos;)&#13;&#10;THEN &apos;Clemson&apos;&#13;&#10;ELSEIF REGEXP_MATCH([Team], &apos;\W*(na)\W*&apos;)&#13;&#10;THEN &apos;na&apos;&#13;&#10;END' />
+        </column>
+        <column datatype='boolean' name='[Champion Status]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Finals Appearances]' role='measure' type='quantitative' />
+        <column datatype='real' name='[GDP]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Population]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+        <column-instance column='[Finals Appearances]' derivation='Avg' name='[avg:Finals Appearances:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[GDP]' derivation='Avg' name='[avg:GDP:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Population]' derivation='Avg' name='[avg:Population:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_1116329770518261762]' derivation='None' name='[none:Calculation_1116329770518261762:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1116329770520317955]' derivation='None' name='[none:Calculation_1116329770520317955:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_1116329770525597700]' derivation='None' name='[none:Calculation_1116329770525597700:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Champion Status]' derivation='None' name='[none:Champion Status:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='6500' id='8' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='9' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' type-v2='filter' w='16000' x='83200' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='10' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' type-v2='filter' w='16000' x='83200' y='14000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8125' id='11' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' pane-specification-id='3' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' type-v2='color' w='16000' x='83200' y='20500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8625' id='13' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16000' x='83200' y='28625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8125' id='14' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type-v2='color' w='16000' x='83200' y='37250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8625' id='15' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type-v2='filter' values='database' w='16000' x='83200' y='45375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='18' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770525597700:nk]' type-v2='filter' values='database' w='16000' x='83200' y='54000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='19' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Team:nk]' type-v2='filter' values='database' w='16000' x='83200' y='60500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8625' id='20' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Finals Appearances:qk]' type-v2='filter' values='database' w='16000' x='83200' y='67000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='6500' id='8' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='9' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' type-v2='filter' w='16000' x='83200' y='7500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='10' mode='checkdropdown' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' type-v2='filter' w='16000' x='83200' y='14000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8625' id='15' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type-v2='filter' values='database' w='16000' x='83200' y='45375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='11' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE' pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' type-v2='color' w='16000' x='83200' y='20500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8625' id='13' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16000' x='83200' y='28625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='14' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE' pane-specification-id='1' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type-v2='color' w='16000' x='83200' y='37250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B015D6FC-9F46-424C-8DD0-A978761B9E73}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='100'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' type='filter' />
+            <card pane-specification-id='3' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{769138EE-7D6C-4ABF-BE24-11ED22FF1E39}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:Population:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770520317955:nk]' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Calculation_1116329770518261762:nk]' type='filter' />
+            <card param='[federated.1m58m6i1atonxf131kw5h0kef481].[none:Champion Status:nk]' type='filter' />
+            <card pane-specification-id='3' param='[federated.1m58m6i1atonxf131kw5h0kef481].[avg:GDP:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{199C00A8-2EB4-4ABA-BC3B-9CF63B612324}' />
+    </window>
+    <window class='dashboard' name='Scatter Plots'>
+      <viewpoints>
+        <viewpoint name='Scatter Plot of City GDP vs. City Finals Appearances | Correlational Measure: MSE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Scatter Plot of City Population vs. City Finals Appearances | Correlational Measure: MSE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{E5966710-CC01-4977-A978-0B28E92EFC73}' />
+    </window>
+  </windows>
+</workbook>

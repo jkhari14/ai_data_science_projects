@@ -1,0 +1,132 @@
+2011:
+Politics and Government, 3233
+Books and Literature, 2898
+Obama, Barack, 2687
+New York City, 2675
+United States Politics and Government, 2554
+Football, 2479
+Baseball, 2308
+Music, 2225
+Movies, 2119
+Art, 2078
+
+2012:
+Presidential Election of 2012, 7420
+Obama, Barack, 6472
+Books and Literature, 6092
+New York City, 5989
+Politics and Government, 4978
+Music, 4941
+United States Politics and Government, 4828
+Football, 4816
+Movies, 4568
+Romney, Mitt, 4523
+
+2013:
+New York City, 9342
+Books and Literature, 9256
+Obama, Barack, 8846
+Music, 7575
+Presidential Election of 2012, 7513
+Movies, 7316
+United States Politics and Government, 7172
+Art, 6566
+Baseball, 6407
+Football, 6152
+
+2014:
+Books and Literature, 12443
+New York City, 12270
+Obama, Barack, 11334
+Music, 10235
+Movies, 10075
+United States Politics and Government, 9620
+Art, 8704
+Baseball, 7706
+Presidential Election of 2012, 7536
+Theater, 7427
+
+2015:
+Books and Literature, 15440
+New York City, 14953
+Obama, Barack, 13494
+Music, 12925
+Movies, 12698
+United States Politics and Government, 12059
+Art, 10966
+Fashion and Apparel, 9299
+Theater, 9167
+Baseball, 9101
+
+2016:
+Books and Literature, 18187
+New York City, 17504
+Movies, 15213
+Music, 15090
+Obama, Barack, 15079
+United States Politics and Government, 14262
+Art, 12779
+Presidential Election of 2016, 12037
+Television, 11229
+Fashion and Apparel, 11203
+
+2017:
+United States Politics and Government, 20221
+Books and Literature, 20176
+New York City, 18965
+Movies, 16963
+Music, 15705
+Obama, Barack, 15561
+Art, 13934
+Trump, Donald J, 13762
+Television, 12838
+Presidential Election of 2016, 12514
+
+2018:
+United States Politics and Government, 23554
+Books and Literature, 21489
+New York City, 19962
+Movies, 18073
+Trump, Donald J, 17486
+Music, 15971
+Obama, Barack, 15705
+Art, 14639
+Television, 13810
+Presidential Election of 2016, 12826
+
+2019:
+United States Politics and Government, 30278
+Trump, Donald J, 24028
+Books and Literature, 23810
+New York City, 21730
+Movies, 20283
+Music, 16450
+Obama, Barack, 15942
+Art, 15893
+Television, 15551
+Fashion and Apparel, 13553
+
+2020:
+United States Politics and Government, 43192
+Trump, Donald J, 36884
+Books and Literature, 28217
+Coronavirus (2019-nCoV), 26915
+New York City, 25517
+Movies, 23648
+Television, 18514
+Art, 18040
+United States, 17375
+Music, 17333
+
+2021:
+United States Politics and Government, 48906
+Trump, Donald J, 39091
+Coronavirus (2019-nCoV), 36010
+Books and Literature, 30652
+New York City, 27549
+Movies, 25289
+United States, 22078
+Politics and Government, 20098
+Television, 20002
+Art, 19147
+
